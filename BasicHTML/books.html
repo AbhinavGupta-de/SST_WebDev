@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<!-- 
+Create an HTML table to display information about 5 different books.
+The table should have a header row and 4 data rows.
+Each book should have a title, author, publication date, and number of pages.
+
+Further, refer to the test cases to understand necessary requirements to submit the problem.
+  -->
+
+		<table>
+			<tr>
+				<th>Title</th>
+				<th>Author</th>
+				<th>Publication Date</th>
+				<th>Pages</th>
+			</tr>
+			<tr>
+				<td>The Great Gatsby</td>
+				<td>F. Scott Fitzgerald</td>
+				<td>April 10, 1925</td>
+				<td>180</td>
+			</tr>
+			<tr>
+				<td>To Kill a Mockingbird</td>
+				<td>Harper Lee</td>
+				<td>July 11, 1960</td>
+				<td>281</td>
+			</tr>
+			<tr>
+				<td>1984</td>
+				<td>George Orwell</td>
+				<td>June 8, 1949</td>
+				<td>328</td>
+			</tr>
+			<tr>
+				<td>The Catcher in the Rye</td>
+				<td>J. D. Salinger</td>
+				<td>July 16, 1951</td>
+				<td>234</td>
+			</tr>
+		</table>
+
+		<!-- 
+   Create an HTML form for a survey to collect information about the favourite food of people.
+
+The survey should include the following fields:
+Name (text input)
+Age (number input)
+Gender (radio buttons with Male and Female options)
+Favorite Food (drop-down list with options like Pizza, Chinese food, Indian food, etc.)
+Do you like to cook? (checkbox with Yes/No options)
+Additional comments (textarea input)
+Submit button
+
+Further, refer to the test cases to understand necessary requirements to submit the problem.
+  -->
+		<form>
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" /><br /><br />
+
+			<label for="age">Age:</label>
+			<input type="number" id="age" name="age" /><br /><br />
+
+			<label for="gender">Gender:</label><br />
+			<input type="radio" id="male" name="gender" value="male" />
+			<label for="male">Male</label><br />
+			<input type="radio" id="female" name="gender" value="female" />
+			<label for="female">Female</label><br /><br />
+
+			<label for="food">Favorite Food:</label>
+			<select id="food" name="food">
+				<option value="pizza">Pizza</option>
+				<option value="chinese">Chinese food</option>
+				<option value="indian">Indian food</option>
+				<option value="other">Other</option></select
+			><br /><br />
+
+			<label for="cook">Do you like to cook?</label>
+			<input type="checkbox" id="cook" name="cook" value="yes" /><br /><br />
+
+			<label for="comments">Additional comments:</label><br />
+			<textarea id="comments" name="comments" rows="4" cols="50"></textarea
+			><br /><br />
+
+			<input type="submit" value="Submit" />
+		</form>
+
+		<!-- 
+
+   Create the ‘Get in Touch’ Form for your portfolio which should include the following:
+
+1. Name input section (an input of text type)
+
+2. Email input section (an input of email type)
+
+3. Message input section (a textarea)
+
+4. and a submit button (an input of submit type)
+
+-->
+		<form>
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" /><br /><br />
+
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" /><br /><br />
+
+			<label for="message">Message:</label><br />
+			<textarea id="message" name="message" rows="4" cols="50"></textarea
+			><br /><br />
+
+			<input type="submit" value="Submit" />
+		</form>
+
+		<!--
+   Create a basic HTML webpage that displays 2 list. One ordered, one unordered.
+Ordered List should contain a list of 5 cities from around the world. Use alphabets numbers for list-item marker.
+Unordered List should contain a list of 3 beverages. Use square for list-item marker
+ -->
+
+		<h1>List of Cities and Beverages</h1>
+		<h2>Ordered List of Cities</h2>
+		<ol type="a">
+			<li>Bangkok</li>
+			<li>Copenhagen</li>
+			<li>Dubai</li>
+			<li>Edinburgh</li>
+			<li>Florence</li>
+		</ol>
+		<h2>Unordered List of Beverages</h2>
+		<ul>
+			<li>Coffee</li>
+			<li>Tea</li>
+			<li>Soda</li>
+		</ul>
+
+		<!-- 
+    default-icon
+Verify Table is created (table tag is used).
+default-icon
+Verify first row items use th and not td
+default-icon
+Verify Other rows use td. (Checks if all the rows except the first row contains td tag or not)
+default-icon
+Verify rowspan according to the table. (Vikhayat and Ayush's td tag should have rowspan of 2)
+View output
+default-icon
+Verify colspan according to the table. (Total:12's td tag should have colspan of 3)
+  -->
+		<style>
+			table {
+				border-collapse: collapse;
+				width: 100%;
+			}
+
+			th,
+			td {
+				text-align: left;
+				padding: 8px;
+			}
+
+			tr:nth-child(even) {
+				background-color: #f2f2f2;
+			}
+
+			th {
+				background-color: #4caf50;
+				color: white;
+			}
+		</style>
+
+		<table>
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Tech</th>
+					<th>Rating</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td rowspan="2">Vikhayat</td>
+					<td>HTML - 5<br />CSS - 1</td>
+					<td>6<br />2</td>
+				</tr>
+				<tr>
+					<td rowspan="2">Ayush</td>
+					<td>HTML - 5<br />CSS - 1</td>
+					<td>6<br />2</td>
+				</tr>
+				<tr>
+					<td colspan="3">Total:</td>
+					<td>12</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>
