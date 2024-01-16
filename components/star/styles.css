@@ -1,0 +1,45 @@
+body {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.container > div {
+	width: 100px;
+	height: 100px;
+	background: #fff;
+	border-radius: 50%;
+	position: relative;
+}
+
+.star-container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+
+.star-container > span {
+	width: 50px;
+	height: 50px;
+	background: #fff;
+	border-radius: 50%;
+	font-size: xxx-large;
+}
+
+.star-filled {
+	color: rgb(250, 250, 7);
+}
