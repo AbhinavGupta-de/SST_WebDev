@@ -1,0 +1,31 @@
+body {
+	font-family: Arial, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+	background-color: #f4f4f4;
+}
+
+.app {
+	text-align: center;
+}
+
+form {
+	margin-bottom: 20px;
+}
+
+input {
+	margin: 0 10px;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+td {
+	border: 1px solid #000;
+	padding: 8px;
+	text-align: center;
+}
